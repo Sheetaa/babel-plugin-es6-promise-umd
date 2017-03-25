@@ -1,0 +1,36 @@
+{
+  "name": "babel-plugin-es6-promise-umd",
+  "version": "0.1.0",
+  "description": "Babel plugin which transpiles Promise by using es6-promise, support AMD and CommonJS",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "build": "babel src --out-dir lib --source-maps",
+    "lint": "fecs src --rule",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "babel-plugin",
+    "promise",
+    "polyfill",
+    "umd",
+    "amd"
+  ],
+  "peerDependencies": {
+    "es6-promise": "^4"
+  },
+  "author": "Sheetaa",
+  "license": "ISC",
+  "dependencies": {
+    "babel-template": "^6.23.0",
+    "babel-types": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.0",
+    "rimraf": "^2.6.1"
+  }
+}
