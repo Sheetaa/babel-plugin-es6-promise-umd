@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run clean",
-    "build": "babel src --out-dir lib --source-maps",
+    "build": "babel src --out-dir lib",
     "lint": "fecs src --rule",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
