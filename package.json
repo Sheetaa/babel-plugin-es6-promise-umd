@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-es6-promise-umd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel plugin which transpiles Promise by using es6-promise, support AMD and CommonJS",
   "main": "lib/index.js",
   "scripts": {
